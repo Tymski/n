@@ -5,12 +5,12 @@ n is a 'create new file' command for Windows cmd.exe
 ```cmd
 n file
 ```
-"n file" Will create file named "file" in current location
+"n file" Will create empty file named "file" in current location
 
 ```cmd
 n 1 2 3 4 5
 ```
-"n 1 2 3 4 5" Will create five files in current location
+"n 1 2 3 4 5" Will create five empty files in current location
 
 Prevents overriding existing files or directories:
 ```cmd
