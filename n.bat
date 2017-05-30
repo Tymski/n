@@ -3,11 +3,11 @@ IF (%1) == () ECHO Provide filename to create a file.
 :TOP
 IF (%1) == () GOTO END
 IF EXIST %1 (
-		echo %1 already exists
-	) ELSE (
-		copy nul "%1" > nul
-		echo %1 created
-	)
+	ECHO %1 already exists
+) ELSE (
+	COPY NUL "%1" > NUL
+	ECHO %1 created
+)
 SHIFT
 GOTO TOP
 :END
