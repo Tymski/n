@@ -6,7 +6,11 @@ IF EXIST %1 (
 	ECHO %1 already exists
 ) ELSE (
 	COPY NUL "%1" > NUL
-	ECHO %1 created
+	IF EXIST %1 (
+		ECHO %1 created
+	) ELSE (
+		ECHO Unable to create %1
+	)	
 )
 SHIFT
 GOTO TOP

@@ -2,24 +2,27 @@
 n is a 'create new file' command for Windows cmd.exe
 
 ## Usage:
-```cmd
-n file
-```
-"n file" Will create empty file named "file" in current location
 
+### Create single file
 ```cmd
-n 1 2 3 4 5
+n file.txt
 ```
-"n 1 2 3 4 5" Will create five empty files in current location
+"n file.txt" Will create empty file named "file.txt" in current location
+
+### Create multiple files
+```cmd
+n index.html style.css readme.md script.js
+```
+"n index.html style.css readme.md script.js" Will atempt to create four empty files in current location
 
 Prevents overriding existing files or directories:
 ```cmd
-C:\Users\Tymon\Desktop>n 1 3 5
+C:\Projects\n> n 1 3 5
 1 created
 3 created
 5 created
 
-C:\Users\Tymon\Desktop>n 1 2 3 4 5
+C:\Projects\n> n 1 2 3 4 5
 1 already exists
 2 created
 3 already exists
