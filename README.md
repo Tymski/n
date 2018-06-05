@@ -38,3 +38,7 @@ or in any folder in your PATH. (type PATH in cmd.exe to see your PATH folders)
 Save n.bat in any folder you want and add that folder to your PATH.
 You can add folder to PATH as follows:
 >Control Panel » System » Advanced » Environment Variables » select PATH » Edit » New
+
+## Miscellaneous info:
+* Batch files are series of commands stored in a plain text file.
+* This script creates a 0 size file
